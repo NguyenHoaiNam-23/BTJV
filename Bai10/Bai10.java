@@ -7,11 +7,11 @@ import BTJV.Bai10.QuanLy;
 public class Bai10 {
 
 	public static void main(String[] args) {
-		Scanner sc_114 = new Scanner(System.in);
-		QuanLy ql_114 = new QuanLy();
+		Scanner sc_123 = new Scanner(System.in);
+		QuanLy ql_123 = new QuanLy();
 
-		ql_114.nhapThongTin(sc_114);
-		ql_114.hienThiDanhSachBienLai();
-		sc_114.close();
+		ql_123.nhapThongTin(sc_123);
+		ql_123.hienThiDanhSachBienLai();
+		sc_123.close();
 	}
 }

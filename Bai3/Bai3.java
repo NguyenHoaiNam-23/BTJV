@@ -9,8 +9,8 @@ public class Bai3 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		QuanLySach qls = new QuanLySach();
-		qls.nhapDanhSach(sc);
+		QuanLySach qls_123 = new QuanLySach();
+		qls_123.nhapDanhSach(sc);
 
 		do {
 			System.out.println("================ MENU ================");
@@ -25,17 +25,17 @@ public class Bai3 {
 
 			switch (choice) {
 			case 1:
-				qls.hienThiDanhSach();
+				qls_123.hienThiDanhSach();
 				break;
 			case 2:
 				System.out.print("Nhap ma tai lieu can tim: ");
 				String maTL = sc.nextLine();
-				qls.timKiemTheoMa(maTL);
+				qls_123.timKiemTheoMa(maTL);
 				break;
 			case 3:
 				System.out.print("Nhap ma tai lieu can xoa: ");
 				String maTLXoa = sc.nextLine();
-				qls.xoaTheoMa(maTLXoa);
+				qls_123.xoaTheoMa(maTLXoa);
 				break;
 			case 4:
 				System.out.println("Thoat chuong trinh.");

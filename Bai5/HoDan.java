@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class HoDan extends Nguoi {
 	private int soNguoi;
 	private int soNha;
-	private Nguoi[] DS_114;
+	private Nguoi[] DS_123;
 
 	public HoDan() {
-		DS_114 = new Nguoi[10];
+		DS_123 = new Nguoi[10];
 	}
 
 	public HoDan(String hoTen, Date ngaySinh, String ngheNghiep, int soNguoi, int soNha) {
@@ -28,8 +28,8 @@ public class HoDan extends Nguoi {
 		System.out.println("\tNhap thong tin cho tung nguoi trong ho:");
 		for (int i = 0; i < soNguoi; i++) {
 			System.out.println("Nguoi thu " + (i + 1) + " la:");
-			DS_114[i] = new Nguoi();
-			DS_114[i].nhapThongTin(sc);
+			DS_123[i] = new Nguoi();
+			DS_123[i].nhapThongTin(sc);
 		}
 	}
 
@@ -39,12 +39,12 @@ public class HoDan extends Nguoi {
 		System.out.println("\tThong tin cua tung nguoi trong gia dinh:");
 		for (int i = 0; i < soNguoi; i++) {
 			System.out.println("Nguoi thu " + (i + 1) + " la:");
-			DS_114[i].hienThiThongTin();
+			DS_123[i].hienThiThongTin();
 		}
 	}
 
-	public Nguoi[] getDS_114() {
-		return DS_114;
+	public Nguoi[] getDS_123() {
+		return DS_123;
 	}
 
 	public int getSoNguoi() {

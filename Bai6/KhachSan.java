@@ -6,39 +6,39 @@ import java.util.Scanner;
 
 public class KhachSan {
 	// thuoc tinh
-	private HashMap<String, KhachTro> dsKhachTro_114;
+	private HashMap<String, KhachTro> dsKhachTro_123;
 
 	public KhachSan() {
-		dsKhachTro_114 = new HashMap<String, KhachTro>();
+		dsKhachTro_123 = new HashMap<String, KhachTro>();
 	}
 
 	public void nhapThongTin(Scanner sc) {
 		System.out.print("Nhap so luong khach tro: ");
-		int soLuong_114 = sc.nextInt();
+		int soLuong_123 = sc.nextInt();
 		sc.nextLine();
 
-		for (int i = 0; i < soLuong_114; i++) {
+		for (int i = 0; i < soLuong_123; i++) {
 			System.out.println("Nhap thong tin khach tro thu " + (i + 1) + ":");
-			KhachTro kt_114 = new KhachTro();
-			kt_114.nhapThongTin(sc);
-			dsKhachTro_114.put(kt_114.getCMND() + "", kt_114);
+			KhachTro kt_123 = new KhachTro();
+			kt_123.nhapThongTin(sc);
+			dsKhachTro_123.put(kt_123.getCMND() + "", kt_123);
 		}
 	}
 
 	public void hienThiThongTin() {
 		System.out.println("Danh sach khach tro:");
-		for (KhachTro kt_114 : dsKhachTro_114.values()) {
-			kt_114.hienThiThongTin();
+		for (KhachTro kt_123 : dsKhachTro_123.values()) {
+			kt_123.hienThiThongTin();
 			System.out.println("--------------------");
 		}
 	}
 
 	public void tinhTienThuePhong() {
 		System.out.println("Tien thue phong cua moi khach tro:");
-		for (KhachTro kt_114 : dsKhachTro_114.values()) {
-			double tienThue_114 = kt_114.getSoNgayTro() * kt_114.getGiaPhong();
-			System.out.println("Khach tro: " + kt_114.getHoTen() + ", CMND: " + kt_114.getCMND() + ", Tien thue: "
-					+ tienThue_114);
+		for (KhachTro kt_123 : dsKhachTro_123.values()) {
+			double tienThue_123 = kt_123.getSoNgayTro() * kt_123.getGiaPhong();
+			System.out.println("Khach tro: " + kt_123.getHoTen() + ", CMND: " + kt_123.getCMND() + ", Tien thue: "
+					+ tienThue_123);
 		}
 	}
 }

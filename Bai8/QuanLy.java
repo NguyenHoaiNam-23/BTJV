@@ -5,10 +5,10 @@ import java.util.*;
 
 public class QuanLy {
 	// thuoc tinh
-	private HashMap<String, CBGV> danhSachCBGV_114;
+	private HashMap<String, CBGV> danhSachCBGV_123;
 
 	public QuanLy() {
-		danhSachCBGV_114 = new HashMap<String, CBGV>();
+		danhSachCBGV_123 = new HashMap<String, CBGV>();
 	}
 
 	public void nhapDanhSachCBGV(Scanner sc) {
@@ -20,13 +20,13 @@ public class QuanLy {
 			System.out.println("Nhap thong tin can bo giao vien thu " + (i + 1) + ":");
 			CBGV cbgv = new CBGV();
 			cbgv.nhapThongTin(sc);
-			danhSachCBGV_114.put(cbgv.hoTen, cbgv); // su dung ho ten lam khoa
+			danhSachCBGV_123.put(cbgv.hoTen, cbgv); // su dung ho ten lam khoa
 		}
 	}
 
 	public void hienThiDanhSachCBGV() {
 		System.out.println("Danh sach can bo giao vien:");
-		for (CBGV cbgv : danhSachCBGV_114.values()) {
+		for (CBGV cbgv : danhSachCBGV_123.values()) {
 			cbgv.hienThiThongTin();
 			System.out.println("-------------------------");
 		}
@@ -35,7 +35,7 @@ public class QuanLy {
 	public void timKiemCBGV(Scanner sc) {
 		System.out.print("Nhap ho ten can bo giao vien can tim: ");
 		String hoTen = sc.nextLine();
-		CBGV cbgv = danhSachCBGV_114.get(hoTen);
+		CBGV cbgv = danhSachCBGV_123.get(hoTen);
 		if (cbgv != null) {
 			System.out.println("Thong tin can bo giao vien:");
 			cbgv.hienThiThongTin();

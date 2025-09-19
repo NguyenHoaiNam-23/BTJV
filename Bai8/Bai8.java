@@ -7,12 +7,12 @@ import BTJV.Bai8.QuanLy;
 public class Bai8 {
 
 	public static void main(String[] args) {
-		Scanner sc_114 = new Scanner(System.in);
-		QuanLy ql_114 = new QuanLy();
-		ql_114.nhapDanhSachCBGV(sc_114);
-		ql_114.hienThiDanhSachCBGV();
-		ql_114.timKiemCBGV(sc_114);
-		sc_114.close();
+		Scanner sc_123 = new Scanner(System.in);
+		QuanLy ql_123 = new QuanLy();
+		ql_123.nhapDanhSachCBGV(sc_123);
+		ql_123.hienThiDanhSachCBGV();
+		ql_123.timKiemCBGV(sc_123);
+		sc_123.close();
 	}
 
 }

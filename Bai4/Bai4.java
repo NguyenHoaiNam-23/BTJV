@@ -7,23 +7,23 @@ import BTJV.Bai4.TuyenSinh;
 public class Bai4 {
 
 	public static void main(String[] args) {
-		Scanner sc_114 = new Scanner(System.in);
+		Scanner sc_123 = new Scanner(System.in);
 
-		TuyenSinh dsTuyenSinh_114 = new TuyenSinh();
+		TuyenSinh dsTuyenSinh_123 = new TuyenSinh();
 
 		System.out.println("Nhap vao danh sach thi sinh: ");
-		dsTuyenSinh_114.nhapDanhSach(sc_114);
+		dsTuyenSinh_123.nhapDanhSach(sc_123);
 
 		System.out.println("Danh sach thi sinh du thi la:");
-		dsTuyenSinh_114.hienThiDanhSach();
+		dsTuyenSinh_123.hienThiDanhSach();
 
 		System.out.print("Nhap so bao danh can tim: ");
-		int soBaoDanh = sc_114.nextInt();
-		sc_114.nextLine();
+		int soBaoDanh = sc_123.nextInt();
+		sc_123.nextLine();
 
-		dsTuyenSinh_114.timKiemThiSinh(soBaoDanh);
+		dsTuyenSinh_123.timKiemThiSinh(soBaoDanh);
 
-		sc_114.close();
+		sc_123.close();
 	}
 
 }

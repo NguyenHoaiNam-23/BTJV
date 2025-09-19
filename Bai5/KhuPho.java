@@ -4,10 +4,10 @@ import java.util.*;
 
 public class KhuPho {
 
-	private HashMap<Integer, HoDan> DS_114;
+	private HashMap<Integer, HoDan> DS_123;
 	
 	public KhuPho() {
-		DS_114 = new HashMap<>();
+		DS_123 = new HashMap<>();
 	}
 
 	public void nhapThongTin(Scanner sc) {
@@ -18,29 +18,29 @@ public class KhuPho {
 			System.out.println("Nhap thong tin cho ho dan thu " + (i + 1) + ":");
 			HoDan hoDan = new HoDan();
 			hoDan.nhapThongTin(sc);
-			DS_114.put(hoDan.getSoNha(), hoDan);
+			DS_123.put(hoDan.getSoNha(), hoDan);
 		}
 	}
 
-	public HashMap<Integer, HoDan> getDS_114() {
-		return DS_114;
+	public HashMap<Integer, HoDan> getDS_123() {
+		return DS_123;
 	}
 
 	public void hienThiThongTin() {
 		System.out.println("Thong tin chi tiet cua tung ho dan trong khu pho:");
-		for (Integer key : DS_114.keySet()) {
+		for (Integer key : DS_123.keySet()) {
 			System.out.println("Ho dan co ma so: " + key);
-			DS_114.get(key).hienThiThongTin();
+			DS_123.get(key).hienThiThongTin();
 		}
 	}
 
 	public void timKiemThongTin() {
 		ArrayList<HoDan> ketQua = new ArrayList<>();
 		Calendar calNow = Calendar.getInstance();
-		for (HoDan hoDan : DS_114.values()) {
+		for (HoDan hoDan : DS_123.values()) {
 			for (int i = 0; i < hoDan.getSoNguoi(); i++) {
-				if (hoDan.getDS_114()[i] == null) continue;
-				Date nSinh = hoDan.getDS_114()[i].getNgaySinh();
+				if (hoDan.getDS_123()[i] == null) continue;
+				Date nSinh = hoDan.getDS_123()[i].getNgaySinh();
 				if (nSinh == null) continue;
 
 				Calendar calBirth = Calendar.getInstance();
