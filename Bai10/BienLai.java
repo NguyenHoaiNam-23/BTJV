@@ -45,6 +45,6 @@ public class BienLai extends KhachHang {
 		super.hienThiThongTin();
 		System.out.println("\tChi so moi: " + chiSoMoi);
 		System.out.println("\tChi so cu: " + chiSoCu);
-		System.out.println("\tTien: : " + tien);
+		System.out.printf("\tTien: %,d\n", (long) tien);
 	}
 }
