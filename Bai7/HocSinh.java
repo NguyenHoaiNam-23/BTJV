@@ -1,4 +1,4 @@
-
+package BTJV.Bai7;
 
 import java.util.Scanner;
 
